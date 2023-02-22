@@ -48,3 +48,10 @@ const number = +"32.3"; // 32.3
 ```js
 [x,y] = [y,x]
 ```
+
+### Round Number Up
+
+```js
+    const year = 2023;
+    const century = Math.ceil(year / 100); // 21
+```
