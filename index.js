@@ -8,6 +8,15 @@ console.log("howManyTimes 2:", howManyTimes(2, arr)); // 6
 console.log("howManyTimes 3:", howManyTimes(3, arr)); // 2
 
 //////////////////////////////////////
+//  Generate a random number in a given range
+function getRandomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+getRandomNumber(2, 10);
+console.log("getRandomNumber(2,10) :>> ", getRandomNumber(2, 10));
+//////////////////////////////////////
 //  Min-max in array
 
 Math.max(...arr); //245
@@ -48,9 +57,43 @@ const number = +"32.3";
 console.log("number :>> ", number); // 32.3
 
 //////////////////////////////////////
+// Swap two variables
+let x = "first";
+let y = "second";
+
+console.log("x before swap:>> ", x);
+console.log("y before swap:>> ", y);
+
+[x, y] = [y, x];
+
+console.log("x after sw:>> ", x);
+console.log("y after sw:>> ", y);
+
+//////////////////////////////////////
 // Round Number Up
 
 const year = 2023;
 const century = Math.ceil(year / 100); // 21
 
-console.log('century :>> ', century);
+console.log("century :>> ", century);
+
+//////////////////////////////////////
+// truthy and falsy boolean
+
+const empty = null;
+const full = 1;
+
+console.log('Boolean(empty) :>> ', Boolean(empty));
+console.log('!!empty :>> ', !!empty );   
+console.log('Boolean(full) :>> ', Boolean(full));
+console.log('!!full :>> ', !!full );
+
+//////////////////////////////////////
+// 
+
+const arr3 = [1,2,3,4];
+const arr4 = [2,4,6];
+
+const diff = arr3.filter(x => !arr4.includes(x));
+
+console.log('diff :>> ', diff); // [1,3]
