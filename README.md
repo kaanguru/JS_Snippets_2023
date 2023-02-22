@@ -10,6 +10,9 @@ const howManyTimes = (num, arr) => arr.filter((x) => x === num).length;
 
 ## ShortCuts
 
+Tip:
+    Use Math.floor instead of Math.round when calculating the center index to ensure that it is an integer.
+
 ### Min-max in array
 
 ```js

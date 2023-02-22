@@ -29,21 +29,28 @@ console.log("cloneObj :>> ", cloneObj);
 //  Merge two arrays
 
 const arr1 = [23, 25];
-const arr2 = [...arr1, 56,74] // [ 23, 25, 56, 74 ]
+const arr2 = [...arr1, 56, 74]; // [ 23, 25, 56, 74 ]
 
-console.log('arr2 :>> ', arr2);
+console.log("arr2 :>> ", arr2);
 
 //////////////////////////////////////
 //  Floats to int
 
-const float = ~2.3
+const float = ~2.3;
 
-console.log('float :>> ', float); // -3
+console.log("float :>> ", float); // -3
 
 //////////////////////////////////////
 //  String to number
 
 const number = +"32.3";
 
-console.log('number :>> ', number); // 32.3
+console.log("number :>> ", number); // 32.3
 
+//////////////////////////////////////
+// Round Number Up
+
+const year = 2023;
+const century = Math.ceil(year / 100); // 21
+
+console.log('century :>> ', century);
